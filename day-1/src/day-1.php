@@ -1,11 +1,16 @@
 <?php
 
-function trailingZeros($num) {
-    return floor($num/5)+floor($num/25);
+function trailingZeros($n) {
+    $zeros = 0;
+    $i = 5;
+
+    while ($i < $n) {
+        $zeros += floor($n/$i);
+        $i*=5;
+    }
+
+    return $zeros;
 }
 
 //Test output
-for ($i = 0; $i < 101; $i++) {
-    $num = trailingZeros($i);
-    echo "{$i}: {$num}\n";
-}
+echo trailingZeros(1000000000);

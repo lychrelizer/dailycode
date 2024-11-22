@@ -34,3 +34,5 @@ Origin: [edabit.com](https://edabit.com/challenge/E4D7miJs5QMAeDqTj)
 When looking at a table of factorial numbers (e.g. https://www.wackerart.de/mathematik/big_numbers/factorial_table.html) at first glance it appears, the number of trailing zeros increases by one every time the given number is dividable by 5, and increases by two when it's dividable by 25.
 
 Test failed with trailingZeros(1000), so there must be something missing.
+
+... the number of zeros increases every 5<sup>n</sup>
