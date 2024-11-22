@@ -1,26 +1,30 @@
-# Day 1 | Majority Element
+# Day 1 | Trailing Zeros
 
-Given an array `nums` of size `n`, return the majority element. The majority element is the element that appears more than `⌊n / 2⌋` times. You may assume that the majority element always exists in the array.
+**Mubashir** needs your help to find out trailing zeros after calculating factorial of a given number.
 
-> Example 1:
+Create a function which takes a number `$n` and calculates the **number of trailing zeros** in factorial of the given number.
 
-    Input: nums = [3,2,3]
-    Output: 3
+    n! = 1 _ 2 _ 3 _ ... _ n
 
-> Example 2:
+## Examples
 
-    Input: nums = [2,2,1,1,1,2,2]
-    Output: 2
+    trailingZeros(0) ➞ 0
+    // 0! = 1
+    // No trailing zero.
 
-Constraints:
+    trailingZeros(6) ➞ 1
+    // 6! = 120
+    // 1 trailing zero.
 
-- `n == nums.length`
-- `1 <= n <= 5 * 10^4`
-- `-10^9 <= nums[i] <= 10^9`
+    trailingZeros(1000) ➞ 249
+    // 1000! has 249 trailing zeros.
 
-**Extra:** Solve the problem in linear time and in `O(1)` space
+## Notes
+
+Hint: No need to calculate the factorial (because it won't help). Find another way to find the number of zeros.
 
 ## Challenge-Info
 
 Date: 2024-11-22
-Origin: [365-Days Code Challenge Discord](https://discord.me/code-challenge) _Day 1_
+
+Origin: [edabit.com](https://edabit.com/challenge/E4D7miJs5QMAeDqTj)
