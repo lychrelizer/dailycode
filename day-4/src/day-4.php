@@ -1,5 +1,5 @@
 <?php
 
-function functionDepth($num) {
+function grabNumberSum($str) {
 	
 }
